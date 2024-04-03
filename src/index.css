@@ -74,3 +74,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  height: 100vh; 
+}
+
+.left-grid {
+  background-color: black;
+}
+
+.right-grid {
+  background-color: white;
+}

@@ -1,12 +1,50 @@
 import { Button } from "@/components/ui/button"
+import { GitHubLogoIcon } from "@radix-ui/react-icons"
+import { Input } from "@/components/ui/input"
+import './index.css'
+
 
 function App() {
 
   return (
     <>
-    <div>
-      <Button>Click me</Button>
-    </div>
+      <div className="grid-container grid-cols-1 lg:grid-cols-2 h-screen">
+        
+        <div className="left-grid bg-white p-4 flex flex-col justify-end">
+        <h1 className="text-white scroll-m-20 text-3xl font-bold tracking-tight absolute top-0 left-0 p-4">
+            Flick.
+          </h1>
+          <blockquote className="border-l-2 pl-6 italic text-white">
+            "Theres's Always a better way to rebuild Rome."
+          </blockquote>
+          <p className="text-white border-l-2 pl-6">-Team</p>
+        </div>
+
+
+        <div className="right-grid bg-black flex flex-col justify-center items-center">
+          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-bold tracking-tight first:mt-0">
+            Login
+          </h2>
+          <h4 className="mt-4 mx-auto flex justify-center text-center">
+            Enter your email and password below to login.
+          </h4>
+          <div className="w-1/2 mx-auto mb-4 mt-4 "> 
+          <Input type="email" placeholder="Email" />
+          <Input type="password" placeholder="Password" className="mt-2"/>
+          <Button type="submit" className="w-full px-4 py-2 mx-auto mt-2 text-center bg-black text-white font-bold rounded-md ">
+            Login
+          </Button>
+
+          <p className="mt-4 mx-auto flex justify-center text-muted-foreground">
+            OR CONTINUE WITH
+          </p>
+          <Button type='button' variant='outline' className='w-full px-4 py-2 mx-auto mt-2 text-center font-bold rounded-md '>
+            <GitHubLogoIcon className='mr-2' />
+            Continue with Github
+          </Button>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
