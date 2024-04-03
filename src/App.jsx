@@ -1,13 +1,14 @@
-// import React from 'react';
-import './App.css';
+import { Button } from "@/components/ui/button"
 
 function App() {
+
   return (
-    <div className="container">
-      <div className="left-side" style={{ backgroundColor: 'white' }} />
-      <div className="right-side" style={{ backgroundColor: 'black' }} />
+    <>
+    <div>
+      <Button>Click me</Button>
     </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App
