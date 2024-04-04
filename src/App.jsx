@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsLeftGridVisible(window.innerWidth >= 350);
+      setIsLeftGridVisible(window.innerWidth >= 320);
     };
 
     window.addEventListener('resize', handleResize);
